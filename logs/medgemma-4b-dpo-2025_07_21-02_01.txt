@@ -1,0 +1,47 @@
+Question: Thời gian gần đây tôi chóng mặt và hay bị nhức đầu, hôm trước còn bị chảy máu cam không rõ lý do.
+
+Model internal thought #1:
+Thought: Người dùng đang mô tả các triệu chứng chóng mặt, nhức đầu và chảy máu cam. Đây có thể là dấu hiệu của nhiều vấn đề, từ nhẹ đến nghiêm trọng. Tôi cần tìm hiểu thêm về tần suất, mức độ và các triệu chứng đi kèm khác.
+Action: Ask: Bạn có bị đau nửa đầu, buồn nôn, hoặc mờ mắt không? Bạn có đang dùng thuốc gì không?
+PAUSE
+
+Observation:
+Tôi không bị đau nửa đầu, buồn nôn hay mờ mắt, chỉ bị nhức đầu và chóng mặt thôi, hiện tại tôi không dùng thuốc gì cả
+
+Model internal thought #2:
+Thought: Người dùng mô tả nhức đầu và chóng mặt, không có các triệu chứng khác như đau nửa đầu, buồn nôn, hoặc mờ mắt. Họ cũng không dùng thuốc. Điều này có thể là do căng thẳng, thiếu ngủ, hoặc một số vấn đề về huyết áp. Tôi cần tìm kiếm thông tin về các nguyên nhân phổ biến của nhức đầu và chóng mặt.
+Action: Search: nhức đầu, chóng mặt, căng thẳng, thiếu ngủ, huyết áp thấp
+PAUSE
+
+Observation:
+Headaches, dizziness, stress, lack of sleep, and low blood pressure can result from insufficient rest and stress. Chronic lack of sleep can lead to serious health issues. Managing stress and ensuring adequate sleep is crucial.
+
+Model internal thought #3:
+Thought: Thông tin tìm kiếm xác nhận rằng nhức đầu và chóng mặt có thể do căng thẳng và thiếu ngủ. Việc quản lý căng thẳng và đảm bảo giấc ngủ đủ giấc là rất quan trọng. Tuy nhiên, chảy máu cam không được đề cập trong thông tin này. Tôi cần tìm kiếm thêm thông tin về chảy máu cam.
+Action: Search: chảy máu cam, nguyên nhân, điều trị
+PAUSE
+
+Observation:
+Chảy máu cam là chảy máu từ mũi, thường do mạch máu nhỏ bị vỡ. Nguyên nhân thường là tự phát, như cảm lạnh hoặc khô mũi. Điều trị bao gồm cầm máu và điều trị nguyên nhân gây chảy máu.
+
+Model internal thought #4:
+Thought: Thông tin tìm kiếm xác nhận rằng chảy máu cam là chảy máu từ mũi do mạch máu nhỏ bị vỡ, thường do cảm lạnh hoặc khô mũi. Việc cầm máu và điều trị nguyên nhân gây chảy máu là điều cần thiết. Tuy nhiên, thông tin này không giải thích tại sao người dùng lại bị chảy máu cam. Tôi cần hỏi thêm về tình hình này.
+Action: Ask: Bạn có bị dị ứng hoặc đang dùng thuốc gì không? Bạn có bị ngứa mũi hoặc hắt hơi không?
+PAUSE
+
+Observation:
+Tôi không có tiền sử dị ứng và hiện tại không sử dụng thuốc gì, cũng không bị ngứa mũi hay hắt hơi
+
+Model internal thought #5:
+Thought: Người dùng không có tiền sử dị ứng, không dùng thuốc và không bị ngứa mũi hoặc hắt hơi. Điều này làm giảm khả năng chảy máu cam do dị ứng hoặc các vấn đề khác liên quan đến mũi. Tuy nhiên, việc chảy máu cam vẫn có thể xảy ra do các nguyên nhân khác. Tôi cần xem xét các nguyên nhân khác có thể gây chảy máu cam.
+Action: Search: chảy máu cam, nguyên nhân khác, chảy máu cam tự phát
+PAUSE
+
+Observation:
+Spontaneous nosebleeds often occur due to dry air or high temperatures, and less common causes include nasal tumors, blood disorders, and certain medications. Severe cases require medical attention.
+
+Model internal thought #6:
+Thought: Thông tin tìm kiếm xác nhận rằng chảy máu cam có thể do không khí khô hoặc nhiệt độ cao. Tuy nhiên, thông tin này không giải thích tại sao người dùng lại bị chảy máu cam. Tôi cần xem xét các nguyên nhân khác có thể gây chảy máu cam.
+Action: Finish: Dựa trên các triệu chứng bạn mô tả, có thể là do không khí khô hoặc nhiệt độ cao. Tuy nhiên, việc chảy máu cam vẫn có thể xảy ra do các nguyên nhân khác. Bạn nên giữ cho không khí trong nhà ẩm và tránh các yếu tố gây kích ứng. Nếu chảy máu cam kéo dài hoặc nghiêm trọng, hãy đi khám bác sĩ để loại trừ các nguyên nhân khác.
+
+Final diagnosis: Dựa trên các triệu chứng bạn mô tả, có thể là do không khí khô hoặc nhiệt độ cao. Tuy nhiên, việc chảy máu cam vẫn có thể xảy ra do các nguyên nhân khác. Bạn nên giữ cho không khí trong nhà ẩm và tránh các yếu tố gây kích ứng. Nếu chảy máu cam kéo dài hoặc nghiêm trọng, hãy đi khám bác sĩ để loại trừ các nguyên nhân khác.

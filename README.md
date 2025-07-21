@@ -1,95 +1,217 @@
-# ReAct Agent Implementation
+# ReAct Agent Implementation - Medical AI Assistant
 
-### Overview
-This repo contains a simple implementation of the ReAct Agent Pattern for LLMs.
-The base of this code is taken directly from Simon Wilison's approach outlined [here](https://til.simonwillison.net/llms/python-react-pattern)
+A Vietnamese medical pre-diagnosis assistant built using the ReAct (Reasoning and Acting) framework with MedGemma-4B model. This project implements an intelligent agent that can analyze symptoms and provide preliminary medical guidance using retrieval-augmented generation.
 
+## 🌟 Features
 
-### Running the code
-To run the code you just need to plug in your openai api key.
-The agent will then run in a loop in the command line awaiting questions until you type 'exit'
+- **ReAct Framework**: Implements the Reasoning and Acting pattern for structured AI decision-making
+- **Medical Knowledge Base**: Uses Vietnamese medical datasets for symptom-disease mapping
+- **Multi-Model Support**: Compatible with MedGemma-4B and OpenAI models
+- **Interactive Chat Interface**: Command-line interface for real-time medical consultations
+- **Tool Integration**: Equipped with medical information search capabilities
+- **Conversation Logging**: Automatic logging of chat sessions for analysis
+- **DPO Training**: Direct Preference Optimization for model fine-tuning
 
-You can run this locally or by forking [this Repl](https://replit.com/@mattambrogi/Agent-Implementation)
+## 📋 Prerequisites
 
-### Example queries / outputs
+- Python 3.11 or higher
+- CUDA-compatible GPU (recommended for local model inference)
+- 8GB+ RAM for model loading
+- Internet connection for external API calls
 
-**User:** Whats on my todo list for today?
+## 🚀 Quick Setup
 
-**Agent:**
-Thought: I should fetch the last item from the todo list.
-Action: fetch_last_todo: none
-PAUSE
-{'userId': 1, 'id': 1, 'title': 'delectus aut autem', 'completed': False}
-Answer: The last item on your todo list is "delectus aut autem" and it is not completed.
+### 1. Clone the Repository
 
-
-*Example of  strange behavior:*
-**User**: Who is the best selling artist ever, how much did they sell, and what is that number divided by the world population?
-
-**Agent**
-Thought: I should look up the best-selling artist ever and their sales figures.
-
-Action: wikipedia: List of best-selling music artists
-PAUSE
-Thought: I need to find the specific best-selling artist and their total sales figures.
-
-Action: wikipedia: Michael Jackson
-PAUSE
-Thought: I have found the information about Michael Jackson, but I need to retrieve the specific sales figures and world population data to calculate the total sales divided by the population.
-
-Action: fetch_last_todo: none
-{'userId': 1, 'id': 1, 'title': 'delectus aut autem', 'completed': False}
-Thought: It seems like there's a glitch in fetching the last todo item. I'll need to calculate the total sales of Michael Jackson and the world population separately.
-
-Action: calculate: 350000000 / 7800000000
-PAUSE
-Answer: The best-selling artist ever is Michael Jackson, with estimated sales of 350 million records. When this number is divided by the world population of approximately 7.8 billion, the result is approximately 0.0449.
-
-
-### Other example queries
-- "calculate: 4 * 7 / 3"
-- "Has Simon been to Madagascar?"
-- "Who was the first man on the moon?"
-
-### Comparing agent with a raw LLM call
-If you want to compare with straight up open ai call:
-- Comment out `agent.query(user_query)`
-- Add the following
-```
-from chat import Chat
-chat = Chat()
-chat_response = chat(user_query)
-print("Chat Response:", chat_response)
+```bash
+git clone https://github.com/nguyenit67/ReAct-agent-implementation.git
+cd ReAct-agent-implementation
 ```
 
-### Examples of agent utility over plain LLM
+### 2. Install Dependencies
 
-**Raising to a power**
-Both LLM and Agent get this right:
-chat("How old is the United States and what is its age in days?")
+This project uses [uv](https://docs.astral.sh/uv/) for fast dependency management:
 
-But here only agent gets right
-agent.query("How old is the United States and what is its age raised to the 4th power?")
-chat("How old is the United States and what is its age raised to the 4th power?")
+```bash
+# Install uv if you haven't already
+pip install uv
 
-
-
-
-
-
-Agent responds:
-`Answer: The United States is approximately 244 years old, and its age raised to the 4th power is 354,453,529,6.`
-
-Which is right outside of the formatting issue (should be 3,544,535,296)
-
-LLM responds:
-```
-The United States is 245 years old as of 2021. 
-
-Raising its age to the 4th power would give us:
-245^4 = 282,853,250,000
+# Install project dependencies
+uv sync
 ```
 
-Which is fairly far off from the true value ~3.6 billion
+### 3. Environment Configuration
 
+Create a `.env` file in the project root:
 
+```env
+# Model Configuration
+MODEL_ID=nguyenit67/medgemma-4b-it-medical-agent-dpo
+# MODEL_ID=google/medgemma-4b-it
+
+# Hugging Face Token (for acessing privated models and uploaded trained models)
+HF_TOKEN=your_huggingface_token_here
+
+# Tavily API (for web search tool)
+TAVILY_API_KEY=your_tavily_api_key_here
+```
+
+### 4. Prepare Medical Knowledge Base
+
+```bash
+# Activate the environment
+uv run prepare_index.py
+```
+
+This will create the TF-IDF index for medical information retrieval.
+
+## 🏃‍♂️ Running the Application
+
+### Main Interactive Assistant
+
+```bash
+$ uv run main.py
+Nhập triệu chứng của bạn, 'clear' để reset lịch sử trò chuyện hoặc 'exit' để thoát: ...
+```
+
+The assistant will start in Vietnamese and prompt you to:
+
+- Enter symptoms for medical consultation
+- Type `clear` to reset conversation history
+- Type `exit` to quit the application
+
+### Example Interaction
+
+```
+Chào mừng đến với Trợ lý AI Y tế!
+Nhập triệu chứng của bạn, 'clear' để reset lịch sử trò chuyện hoặc 'exit' để thoát: Tôi bị đau đầu, sốt nhẹ và đau họng
+
+[Agent Analysis]
+Thought: Người dùng mô tả các triệu chứng đau đầu, sốt và đau họng...
+Action: Search[đau đầu, sốt, đau họng, cảm cúm]
+...
+Finish[Dựa trên các triệu chứng, có thể bạn đang bị cảm cúm hoặc viêm đường hô hấp trên...]
+```
+
+## 📁 Project Structure
+
+```shell
+ReAct-agent-implementation
+├── data/                     # Medical datasets and indices
+│   ├── dpo_train.json        # Data for DPO training on MedGemma-4B-IT
+│   ├── symptoms.csv          # Data of disease names with symptom list
+│   ├── tfidf_index.npz       # TF-IDF trained index
+│   └── tfidf_vectorizer.pkl  # TF_IDF trained vectorizer
+├── logs/                     # Agent chat logging sessions for each query
+│   ├── gpt-4.1-mini-chat-2025_07_17-2_30.txt    
+│   ├── medgemma-4b-it-2025_07_21-03_50.txt
+│   └── ...                   
+├── main.py                   # Entry point for the application
+├── chat.py                   # Chat interface and model interaction
+├── agent.py                  # Main ReAct agent implementation
+├── model.py                  # Model loading and inference utilities
+├── tools.py                  # Medical search tools and functions
+├── logger.py                 # System & agent logging configuration
+├── prepare_index.py          # TF-IDF index preparation
+├── pyproject.toml            # Project dependencies and configuration
+└── medgemma-4b-dpo.ipynb     # Notebook to run Direct Preference Optimization on MedGemma-4B-IT
+```
+
+## 🛠️ Key Components
+
+### ReAct Agent (`agent.py`)
+
+- Implements the ReAct framework with Thought-Action-Observation loops
+- Manages conversation history and context
+- Integrates medical search tools
+
+### Medical Tools (`tools.py`)
+
+- `search_disease_information()`: TF-IDF-based medical knowledge retrieval
+- `search_disease_information_tavily()`: Web-based medical search
+
+### Model Interface (`model.py`)
+
+- Supports local Hugging Face models
+- Handles tokenization and text generation
+- Memory-efficient model loading
+
+## 🔧 Configuration Options
+
+### Model Selection
+
+Edit the `MODEL_ID` in your `.env` file:
+
+```env
+# Local models
+MODEL_ID=google/medgemma-4b-it
+MODEL_ID=path/to/your/fine-tuned-model
+
+# OpenAI models (requires API key)
+MODEL_ID=gpt-4
+MODEL_ID=gpt-3.5-turbo
+```
+
+### Memory Management
+
+For systems with limited GPU memory, modify `model.py`:
+
+```python
+# Enable 8-bit quantization
+load_in_8bit=True
+
+# Enable 4-bit quantization (more aggressive)
+load_in_4bit=True
+```
+
+## 🎯 Training and Fine-tuning
+
+### Direct Preference Optimization (DPO)
+
+Jupyter Notebooks:
+
+Explore training processes:
+
+## 📊 Data Sources
+
+The project uses several Vietnamese medical datasets:
+
+- **intent_train.json**: Disease symptoms and predictions from [Vietnamese-medical-chatbot-based](https://github.com/XuanHien304/Vietnamese-medical-chatbot-based)
+- **symptoms.csv**: Comprehensive symptom database, transformed from **intent_train.json**
+- **Disease-Scenario-SymptomDescription.csv**: Symptom-disease testing scenarios curated from LLM
+- **dpo_train.json**: Training data for preference optimization, generated from LLM based on chat logs of agent
+
+# 
+
+### Performance Optimization
+
+- Use GPU acceleration when available
+- Enable model quantization for memory efficiency
+- Adjust batch sizes based on available hardware
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- **MedGemma**: Google's medical language model
+- **Vietnamese Medical Datasets**: Community-contributed medical knowledge
+- **ReAct Framework**: Reasoning and Acting paradigm for LLM agents
+- **Hugging Face Transformers**: Model infrastructure and utilities
+
+## 📧 Contact
+
+For questions or support, please open an issue in the repository or contact the development team.
+
+---
+
+_Built with ❤️ for Vietnamese healthcare accessibility_

@@ -1,0 +1,290 @@
+[
+    {
+        "prompt": [
+            {
+                "role": "user",
+                "content": "Một tuần nay tôi thường xuyên đau tức ngực khi đi cầu thang hoặc làm việc nặng, tôi còn cảm thấy tim đập nhanh hơn bình thường."
+            },
+            {
+                "role": "assistant",
+                "content": "Thought: Người dùng mô tả đau tức ngực khi đi cầu thang hoặc làm việc nặng, và cảm thấy tim đập nhanh hơn bình thường. Đây có thể là dấu hiệu của các vấn đề về tim mạch. Tôi cần thêm thông tin để xác định chính xác nguyên nhân.\nAction: Ask: Bạn có bị khó thở, đổ mồ hôi lạnh hoặc đau ở cánh tay trái không? Bạn có tiền sử bệnh tim mạch không?"
+            },
+            {
+                "role": "user",
+                "content": "Tôi thỉnh thoảng khó thở nhẹ khi hoạt động mạnh nhưng không bị đổ mồ hôi lạnh hay đau cánh tay trái, và không có tiền sử bệnh tim mạch."
+            }
+        ],
+        "chosen": [
+            {
+                "role": "assistant",
+                "content": "Thought: Người dùng xác nhận có đau ngực khi gắng sức và khó thở nhẹ, nhưng không có các triệu chứng nguy hiểm khác như đau cánh tay trái hay tiền sử bệnh tim. Các triệu chứng này vẫn đáng lo ngại và cần được đánh giá y tế chuyên nghiệp. Tôi sẽ đưa ra chẩn đoán sơ bộ và khuyến nghị đi khám.\nAction: Finish: Dựa trên triệu chứng đau ngực khi gắng sức, đây có thể là dấu hiệu của bệnh động mạch vành hoặc đau thắt ngực ổn định. Mặc dù bạn không có các triệu chứng nguy hiểm khác, bạn nên đi khám bác sĩ chuyên khoa tim mạch sớm để được chẩn đoán chính xác và điều trị kịp thời."
+            }
+        ],
+        "rejected": [
+            {
+                "role": "assistant",
+                "content": "Thought: Người dùng mô tả đau tức ngực khi đi cầu thang hoặc làm việc nặng, và cảm thấy tim đập nhanh hơn bình thường. Đây có thể là dấu hiệu của các vấn đề về tim mạch. Tôi cần thêm thông tin để xác định chính xác nguyên nhân.\nAction: Ask: Bạn có bị khó thở nhẹ khi hoạt động mạnh không? Bạn có tiền sử bệnh tim mạch không?"
+            }
+        ]
+    },
+    {
+        "prompt": [
+            {
+                "role": "user",
+                "content": "Một tuần nay tôi thường xuyên đau tức ngực khi đi cầu thang hoặc làm việc nặng, tôi còn cảm thấy tim đập nhanh hơn bình thường."
+            },
+            {
+                "role": "assistant",
+                "content": "Thought: Người dùng mô tả các triệu chứng có thể liên quan đến tim mạch. Tôi cần hỏi thêm để làm rõ các dấu hiệu nguy hiểm.\nAction: Ask: Bạn có bị khó thở, đổ mồ hôi lạnh hoặc đau ở cánh tay trái không? Bạn có tiền sử bệnh tim mạch không?"
+            },
+            {
+                "role": "user",
+                "content": "Tôi thỉnh thoảng khó thở nhẹ khi hoạt động mạnh nhưng không bị đổ mồ hôi lạnh hay đau cánh tay trái, và không có tiền sử bệnh tim mạch."
+            }
+        ],
+        "chosen": [
+            {
+                "role": "assistant",
+                "content": "Thought: Người dùng đã cung cấp thông tin quan trọng: có khó thở nhẹ khi gắng sức nhưng không có các triệu chứng cảnh báo khác và không có tiền sử bệnh tim. Điều này gợi ý đến bệnh động mạch vành hoặc đau thắt ngực ổn định. Tôi sẽ tìm kiếm thông tin về các tình trạng này.\nAction: Search: khó thở khi gắng sức không kèm triệu chứng khác, đau thắt ngực ổn định"
+            }
+        ],
+        "rejected": [
+            {
+                "role": "assistant",
+                "content": "Thought: Người dùng mô tả đau tức ngực khi đi cầu thang hoặc làm việc nặng. Tôi cần thêm thông tin để xác định nguyên nhân.\nAction: Ask: Bạn có bị khó thở nhẹ khi hoạt động mạnh không? Bạn có tiền sử bệnh tim mạch không?"
+            }
+        ]
+    },
+    {
+        "prompt": [
+            {
+                "role": "user",
+                "content": "Dạo này tôi hay bị đau ngực và tim đập nhanh."
+            },
+            {
+                "role": "assistant",
+                "content": "Thought: Đau ngực và tim đập nhanh là những triệu chứng chung. Tôi cần hỏi thêm về các yếu tố kích hoạt.\nAction: Ask: Cơn đau có xuất hiện khi bạn nghỉ ngơi hay chỉ khi hoạt động mạnh?"
+            },
+            {
+                "role": "user",
+                "content": "Chỉ khi tôi làm việc nặng thôi, nghỉ ngơi là hết ngay."
+            }
+        ],
+        "chosen": [
+            {
+                "role": "assistant",
+                "content": "Thought: Người dùng xác nhận cơn đau chỉ xảy ra khi gắng sức và giảm khi nghỉ. Đây là đặc điểm kinh điển của đau thắt ngực ổn định. Tôi sẽ hỏi thêm về các yếu tố nguy cơ.\nAction: Ask: Bạn có hút thuốc, bị cao huyết áp hay tiểu đường không?"
+            }
+        ],
+        "rejected": [
+            {
+                "role": "assistant",
+                "content": "Thought: Tôi cần biết thêm về các yếu tố kích hoạt cơn đau của người dùng.\nAction: Ask: Cơn đau có xuất hiện khi bạn nghỉ ngơi hay chỉ khi hoạt động mạnh?"
+            }
+        ]
+    },
+    {
+        "prompt": [
+            {
+                "role": "user",
+                "content": "Tôi bị ho khan và mệt mỏi mấy hôm nay."
+            },
+            {
+                "role": "assistant",
+                "content": "Thought: Ho khan và mệt mỏi có thể là cảm lạnh, cúm, hoặc COVID-19. Tôi sẽ tìm kiếm để phân biệt.\nAction: Search: phân biệt triệu chứng cảm lạnh, cúm, COVID-19"
+            },
+            {
+                "role": "user",
+                "content": "Observation: Cúm và COVID-19 thường gây sốt và đau nhức cơ thể, trong khi cảm lạnh thường nhẹ hơn với triệu chứng chính là chảy nước mũi và đau họng."
+            }
+        ],
+        "chosen": [
+            {
+                "role": "assistant",
+                "content": "Thought: Dựa trên thông tin tìm kiếm, việc có sốt hay không là một yếu tố quan trọng để phân biệt. Tôi sẽ hỏi người dùng về triệu chứng này.\nAction: Ask: Bạn có bị sốt hay đau nhức cơ thể không?"
+            }
+        ],
+        "rejected": [
+            {
+                "role": "assistant",
+                "content": "Thought: Tôi cần thêm thông tin về các triệu chứng của người dùng để chẩn đoán.\nAction: Search: triệu chứng ho khan và mệt mỏi"
+            }
+        ]
+    },
+    {
+        "prompt": [
+            {
+                "role": "user",
+                "content": "Tôi bị đau họng, sổ mũi và hắt hơi liên tục."
+            },
+            {
+                "role": "assistant",
+                "content": "Thought: Đây là những triệu chứng rất phổ biến. Tôi cần hỏi thêm để loại trừ các bệnh nghiêm trọng hơn.\nAction: Ask: Bạn có bị sốt cao hay khó thở không?"
+            },
+            {
+                "role": "user",
+                "content": "Không, tôi không sốt và vẫn thở bình thường."
+            }
+        ],
+        "chosen": [
+            {
+                "role": "assistant",
+                "content": "Thought: Người dùng có các triệu chứng của đường hô hấp trên nhưng không có dấu hiệu nguy hiểm như sốt cao hay khó thở. Đây rất có thể là cảm lạnh thông thường. Tôi có đủ thông tin để kết luận.\nAction: Finish: Dựa trên các triệu chứng của bạn, rất có thể bạn bị cảm lạnh thông thường. Bạn nên nghỉ ngơi, uống nhiều nước và theo dõi triệu chứng. Nếu không cải thiện sau một tuần, bạn nên đi khám."
+            }
+        ],
+        "rejected": [
+            {
+                "role": "assistant",
+                "content": "Thought: Tôi cần thêm thông tin về các triệu chứng của người dùng.\nAction: Ask: Bạn có bị đau họng hay sổ mũi không?"
+            }
+        ]
+    },
+    {
+        "prompt": [
+            {
+                "role": "user",
+                "content": "Thời gian gần đây tôi chóng mặt và hay bị nhức đầu, hôm trước còn bị chảy máu cam không rõ lý do."
+            },
+            {
+                "role": "assistant",
+                "content": "Thought: Tôi cần hỏi thêm về các triệu chứng đi kèm để đánh giá mức độ nghiêm trọng.\nAction: Ask: Bạn có bị đau đầu dữ dội, chóng mặt nghiêm trọng, hoặc khó thở không? Bạn có đang dùng thuốc gì không?"
+            },
+            {
+                "role": "user",
+                "content": "Tôi bị nhức đầu, chóng mặt mức độ vừa, không khó thở, và hiện tại không dùng thuốc nào."
+            },
+            {
+                "role": "assistant",
+                "content": "Thought: Các triệu chứng ở mức độ vừa phải. Tôi sẽ hỏi về thời gian và các yếu tố liên quan đến lối sống.\nAction: Ask: Bạn bị nhức đầu và chóng mặt này đã kéo dài bao lâu rồi? Bạn có căng thẳng trong công việc hoặc cuộc sống không?"
+            },
+            {
+                "role": "user",
+                "content": "Tôi bị các triệu chứng này khoảng hai ngày nay và có cảm thấy hơi căng thẳng trong công việc."
+            }
+        ],
+        "chosen": [
+            {
+                "role": "assistant",
+                "content": "Thought: Người dùng xác nhận có căng thẳng, đây có thể là nguyên nhân gây đau đầu. Tôi sẽ hỏi thêm về các triệu chứng liên quan đến đau đầu do căng thẳng.\nAction: Ask: Cơn đau đầu của bạn có cảm giác như một dải băng siết chặt quanh đầu không? Bạn có bị mỏi cổ hay đau vai gáy không?"
+            }
+        ],
+        "rejected": [
+            {
+                "role": "assistant",
+                "content": "Thought: Người dùng có triệu chứng và căng thẳng. Tôi cần tìm kiếm thông tin về các nguyên nhân có thể gây ra các triệu chứng này.\nAction: Search: nhức đầu, chóng mặt, căng thẳng công việc, nguyên nhân nhức đầu, nguyên nhân chóng mặt"
+            }
+        ]
+    },
+    {
+        "prompt": [
+            {
+                "role": "user",
+                "content": "Tôi bị nhức đầu, chóng mặt và có chút căng thẳng."
+            },
+            {
+                "role": "assistant",
+                "content": "Thought: Tôi cần phân biệt loại đau đầu. Tôi sẽ hỏi về các triệu chứng đi kèm.\nAction: Ask: Bạn có bị mệt mỏi, nhạy cảm với ánh sáng hoặc tiếng ồn không? Bạn có bị thay đổi thói quen ăn uống hoặc ngủ không?"
+            },
+            {
+                "role": "user",
+                "content": "Tôi cảm thấy mệt mỏi nhẹ, ngủ hơi chập chờn trong vài ngày gần đây nhưng vẫn ăn uống bình thường, không bị nhạy cảm với ánh sáng hay tiếng ồn."
+            }
+        ],
+        "chosen": [
+            {
+                "role": "assistant",
+                "content": "Thought: Các triệu chứng (nhức đầu, chóng mặt, căng thẳng, mệt mỏi, ngủ chập chờn) rất phù hợp với đau đầu do căng thẳng. Tôi có đủ thông tin để đưa ra khuyến nghị.\nAction: Finish: Dựa trên các triệu chứng bạn mô tả, rất có thể bạn đang bị đau đầu do căng thẳng. Bạn nên cố gắng nghỉ ngơi, thư giãn, ngủ đủ giấc và uống đủ nước. Nếu các triệu chứng không thuyên giảm hoặc nặng hơn, bạn nên đi khám bác sĩ."
+            }
+        ],
+        "rejected": [
+            {
+                "role": "assistant",
+                "content": "Thought: Tôi cần hỏi thêm về các triệu chứng khác đi kèm để đưa ra một đánh giá chính xác hơn.\nAction: Ask: Bạn có bị thay đổi thói quen ăn uống hoặc ngủ không? Bạn có bị thay đổi thói quen ăn uống hoặc ngủ không?"
+            }
+        ]
+    },
+    {
+        "prompt": [
+            {
+                "role": "user",
+                "content": "Tôi bị nhức đầu, chóng mặt, căng thẳng, mệt mỏi và ngủ không ngon giấc."
+            },
+            {
+                "role": "assistant",
+                "content": "Thought: Các triệu chứng này rất điển hình cho đau đầu do căng thẳng. Tôi sẽ xác nhận lại một lần cuối trước khi kết luận.\nAction: Ask: Ngoài những triệu chứng đã kể, bạn còn có biểu hiện nào khác không?"
+            },
+            {
+                "role": "user",
+                "content": "Không, tôi chỉ có vậy thôi."
+            }
+        ],
+        "chosen": [
+            {
+                "role": "assistant",
+                "content": "Thought: Người dùng đã xác nhận không có triệu chứng nào khác. Các thông tin đã đủ để đưa ra chẩn đoán sơ bộ về đau đầu do căng thẳng.\nAction: Finish: Các triệu chứng của bạn rất phù hợp với tình trạng đau đầu do căng thẳng. Để cải thiện, bạn hãy thử các biện pháp thư giãn như thiền, yoga, ngủ đủ giấc và đảm bảo uống đủ nước. Nếu tình hình không cải thiện, hãy tham khảo ý kiến bác sĩ."
+            }
+        ],
+        "rejected": [
+            {
+                "role": "assistant",
+                "content": "Thought: Tôi cần tìm kiếm thêm thông tin về các triệu chứng này để chắc chắn.\nAction: Search: stress, mệt mỏi, ngủ chập chờn, nhức đầu, chóng mặt"
+            }
+        ]
+    },
+    {
+        "prompt": [
+            {
+                "role": "user",
+                "content": "Tôi bị nhức đầu và chóng mặt."
+            },
+            {
+                "role": "assistant",
+                "content": "Thought: Tôi cần tìm hiểu nguyên nhân.\nAction: Search: nguyên nhân gây nhức đầu và chóng mặt"
+            },
+            {
+                "role": "user",
+                "content": "Observation: Nhức đầu và chóng mặt có thể do nhiều nguyên nhân như căng thẳng, mất nước, hoặc các vấn đề về huyết áp."
+            }
+        ],
+        "chosen": [
+            {
+                "role": "assistant",
+                "content": "Thought: Thông tin tìm kiếm gợi ý các nguyên nhân phổ biến. Tôi sẽ hỏi người dùng về các yếu tố này.\nAction: Ask: Gần đây bạn có uống đủ nước không? Bạn có cảm thấy căng thẳng hay lo lắng gì không?"
+            }
+        ],
+        "rejected": [
+            {
+                "role": "assistant",
+                "content": "Thought: Tôi cần thêm thông tin từ người dùng.\nAction: Ask: Bạn có bị nhức đầu hay chóng mặt không?"
+            }
+        ]
+    },
+    {
+        "prompt": [
+            {
+                "role": "user",
+                "content": "Tôi bị nhức đầu, chóng mặt mức độ vừa, không khó thở, và hiện tại không dùng thuốc nào."
+            },
+            {
+                "role": "assistant",
+                "content": "Thought: Tôi sẽ tìm kiếm các nguyên nhân có thể.\nAction: Search: nhức đầu, chóng mặt mức độ vừa, không khó thở"
+            },
+            {
+                "role": "user",
+                "content": "Observation: Headaches and dizziness may result from medication side effects or stress."
+            }
+        ],
+        "chosen": [
+            {
+                "role": "assistant",
+                "content": "Thought: Kết quả tìm kiếm đề cập đến tác dụng phụ của thuốc và căng thẳng. Vì người dùng đã nói không dùng thuốc, tôi sẽ tập trung vào khả năng do căng thẳng.\nAction: Ask: Gần đây bạn có gặp phải chuyện gì gây căng thẳng không?"
+            }
+        ],
+        "rejected": [
+            {
+                "role": "assistant",
+                "content": "Thought: Kết quả tìm kiếm cho thấy nguyên nhân có thể là do thuốc hoặc căng thẳng. Tôi cần hỏi để làm rõ.\nAction: Ask: Bạn có đang dùng loại thuốc nào không? Bạn có bị căng thẳng không?"
+            }
+        ]
+    }
+]

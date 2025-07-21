@@ -1,0 +1,31 @@
+Question: Gần đây tôi rất dễ lo lắng, người mệt mỏi, làm gì cũng kém tập trung và thường xuyên mất ngủ.
+
+Model internal thought #1:
+Thought: Người dùng mô tả các triệu chứng về tâm lý như lo lắng, mệt mỏi, kém tập trung và mất ngủ. Đây có thể là dấu hiệu của các vấn đề về sức khỏe tâm thần. Tôi nên tìm kiếm thông tin về các triệu chứng này.
+Action: Search: lo lắng, mệt mỏi, kém tập trung, mất ngủ, sức khỏe tâm thần
+PAUSE
+
+Observation:
+Anxiety, fatigue, lack of focus, insomnia, and mental health disorders are interconnected. Chronic insomnia can lead to depression. Stress management is crucial for mental well-being.
+
+Model internal thought #2:
+Thought: Tôi cần thêm thông tin về thời gian, mức độ và các yếu tố khác có thể ảnh hưởng đến các triệu chứng này.
+Action: Ask: Bạn có gặp phải các vấn đề về công việc, học tập hoặc các mối quan hệ trong thời gian gần đây không? Bạn có sử dụng chất kích thích như caffeine hoặc rượu không?
+PAUSE
+
+Observation:
+Gần đây tôi hay căng thẳng vì công việc và học tập, cảm thấy lo lắng, mất ngủ, kém tập trung; tôi có uống cà phê nhưng không dùng rượu hay chất kích thích khác.
+
+Model internal thought #3:
+Thought: Người dùng mô tả các triệu chứng về tâm lý như lo lắng, mệt mỏi, kém tập trung và mất ngủ, liên quan đến công việc và học tập. Việc sử dụng caffeine có thể góp phần vào các triệu chứng này. Tôi nên tìm kiếm thông tin về các nguyên nhân và cách xử lý các triệu chứng này.
+Action: Search: lo lắng, mệt mỏi, kém tập trung, mất ngủ, căng thẳng công việc, học tập, caffeine
+PAUSE
+
+Observation:
+Caffeine can cause insomnia; manage stress and get enough sleep to improve focus and reduce fatigue. Regular exercise and balanced meals also help manage stress and improve overall well-being.
+
+Model internal thought #4:
+Thought: Các thông tin tìm kiếm xác nhận rằng caffeine có thể gây ra các triệu chứng mà người dùng đang gặp phải, và gợi ý các biện pháp như quản lý căng thẳng, ngủ đủ giấc, tập thể dục và ăn uống cân bằng.
+Action: Finish: Dựa trên các triệu chứng bạn mô tả, có thể bạn đang gặp phải các triệu chứng của căng thẳng và lo lắng do công việc và học tập. Hãy thử áp dụng các biện pháp như quản lý căng thẳng, ngủ đủ giấc, tập thể dục thường xuyên và ăn uống cân bằng. Nếu các triệu chứng không cải thiện sau một thời gian, hãy cân nhắc tìm kiếm sự giúp đỡ từ chuyên gia tư vấn tâm lý.
+
+Final diagnosis: Dựa trên các triệu chứng bạn mô tả, có thể bạn đang gặp phải các triệu chứng của căng thẳng và lo lắng do công việc và học tập. Hãy thử áp dụng các biện pháp như quản lý căng thẳng, ngủ đủ giấc, tập thể dục thường xuyên và ăn uống cân bằng. Nếu các triệu chứng không cải thiện sau một thời gian, hãy cân nhắc tìm kiếm sự giúp đỡ từ chuyên gia tư vấn tâm lý.

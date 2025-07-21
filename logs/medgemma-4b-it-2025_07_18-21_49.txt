@@ -1,0 +1,32 @@
+Question: Tôi thấy hơi đau ngực, người mệt rũ rượi và hay buồn ngủ vào ban ngày, đôi khi khó thở khi nằm xuống.
+
+Model internal thought #1:
+Thought: Người dùng mô tả các triệu chứng đau ngực, mệt mỏi, buồn ngủ và khó thở khi nằm xuống. Đây có thể là dấu hiệu của nhiều vấn đề khác nhau, bao gồm cả các vấn đề tim mạch và hô hấp. Tôi cần tìm kiếm thông tin về các triệu chứng này để xác định khả năng có thể.
+Action: Search: đau ngực, mệt mỏi, buồn ngủ, khó thở khi nằm xuống, tim mạch, hô hấp
+PAUSE
+
+Observation:
+Chest pain, fatigue, sleepiness, and difficulty breathing when lying down may indicate heart or respiratory issues. Seek medical attention for proper diagnosis and treatment. Symptoms often linked to heart conditions or chronic lung diseases.
+
+Model internal thought #2:
+Thought: Các triệu chứng đau ngực, mệt mỏi, buồn ngủ và khó thở khi nằm xuống có thể chỉ ra các vấn đề về tim mạch hoặc hô hấp. Cần tìm kiếm thêm thông tin để xác định nguyên nhân chính xác.
+Action: Ask: Bạn có bị đau ngực liên tục không? Bạn có tiền sử bệnh tim hoặc phổi không? Bạn có bị khó thở khi vận động không?
+PAUSE
+
+Observation:
+Tôi không bị đau ngực liên tục, không có tiền sử bệnh tim hoặc phổi, nhưng đôi khi cảm thấy khó thở nhẹ khi vận động.
+
+Model internal thought #3:
+Thought: Người dùng không bị đau ngực liên tục, không có tiền sử bệnh tim hoặc phổi, nhưng đôi khi cảm thấy khó thở nhẹ khi vận động. Điều này có thể là dấu hiệu của một số vấn đề về tim mạch hoặc hô hấp, nhưng cũng có thể là do các yếu tố khác. Tôi cần tìm kiếm thêm thông tin để xác định nguyên nhân chính xác.
+Action: Search: khó thở khi vận động, tim mạch, hô hấp, bệnh phổi tắc nghẽn mạn tính (COPD), hen suyễn
+PAUSE
+
+Observation:
+Khó thở khi vận động có thể là dấu hiệu của bệnh phổi tắc nghẽn mạn tính (COPD) hoặc hen suyễn. COPD là bệnh phổi viêm mãn tính, còn hen suyễn do tập thể dục là co thắt phế quản kích hoạt bởi hoạt động thể dục. Những trường hợp nghiêm trọng cần khám sớm.
+
+Model internal thought #4:
+Thought: Khó thở khi vận động có thể là dấu hiệu của COPD hoặc hen suyễn. COPD là bệnh phổi viêm mãn tính, còn hen suyễn là do tập thể dục kích hoạt co thắt phế quản. Cần khám bác sĩ để chẩn đoán chính xác.
+Action: Finish: Dựa trên các triệu chứng bạn mô tả, khó thở khi vận động có thể là dấu hiệu của COPD hoặc hen suyễn. Khuyến nghị: bạn nên đi khám bác sĩ để được chẩn đoán chính xác và điều trị kịp thời.
+PAUSE
+
+Final diagnosis: Dựa trên các triệu chứng bạn mô tả, khó thở khi vận động có thể là dấu hiệu của COPD hoặc hen suyễn. Khuyến nghị: bạn nên đi khám bác sĩ để được chẩn đoán chính xác và điều trị kịp thời.

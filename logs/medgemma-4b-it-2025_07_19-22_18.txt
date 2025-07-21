@@ -1,0 +1,56 @@
+Question: Tôi đang phải học bài nhiều vì sắp thi, không có căng thẳng
+
+Model internal thought #1:
+Thought: Người dùng mô tả cảm giác căng thẳng do phải học bài nhiều trước kỳ thi. Tôi cần xác định xem đây có phải là một vấn đề sức khỏe tâm thần hay không.
+Action: Search: căng thẳng, học bài, thi cử, sức khỏe tâm thần
+PAUSE
+
+Observation:
+Prolonged academic stress and exam pressure can lead to mental health issues like anxiety and depression. Chronic stress negatively impacts both physical and mental health. Effective stress management techniques include regular exercise and mindfulness.
+
+Model internal thought #2:
+Thought: Thông tin tìm kiếm xác nhận rằng căng thẳng học tập có thể dẫn đến các vấn đề sức khỏe tâm thần. Tôi cần hỏi người dùng về mức độ căng thẳng của họ để đưa ra lời khuyên phù hợp.
+Action: Ask: Bạn có cảm thấy quá căng thẳng và lo lắng về việc học bài không? Bạn có đang gặp khó khăn trong việc ngủ hoặc tập trung không?
+PAUSE
+
+Observation:
+tôi đang đi chơi rất là nhiều
+
+Model internal thought #3:
+Thought: Người dùng mô tả rằng họ đang đi chơi nhiều. Điều này có thể là một yếu tố gây căng thẳng, nhưng tôi cần xác định xem nó có phải là nguyên nhân chính của các triệu chứng của họ hay không.
+Action: Search: đi chơi nhiều, căng thẳng, sức khỏe tâm thần
+PAUSE
+
+Observation:
+Excessive socializing can lead to mental health issues like stress and depression. Reducing stress through activities like exercise and social interaction improves mental health. Engaging in hobbies and spending time with pets can alleviate stress and enhance mood.
+
+Model internal thought #4:
+Thought: Thông tin tìm kiếm xác nhận rằng đi chơi quá nhiều có thể gây căng thẳng và ảnh hưởng đến sức khỏe tâm thần. Tôi cần hỏi người dùng về mức độ đi chơi của họ và các hoạt động khác mà họ tham gia để đưa ra lời khuyên phù hợp.
+Action: Ask: Bạn có thường xuyên đi chơi và tham gia các hoạt động xã hội không? Bạn có cảm thấy thoải mái và thư giãn khi đi chơi không?
+PAUSE
+
+Observation:
+tôi không có căng thẳng gì cả
+
+Model internal thought #5:
+Thought: Người dùng nói rằng họ không có căng thẳng. Tuy nhiên, tôi vẫn cần xem xét các triệu chứng khác mà họ mô tả để đảm bảo rằng họ không có vấn đề sức khỏe nào khác.
+Action: Search: không có căng thẳng, sức khỏe tâm thần, các triệu chứng
+PAUSE
+
+Observation:
+Mental health is the state of well-being in which an individual realizes abilities, copes with stress, and functions effectively. Lack of mental stress is linked to overall well-being. Symptoms of mental health issues can include anxiety, depression, and other emotional disturbances.
+
+Model internal thought #6:
+Thought: Thông tin tìm kiếm xác nhận rằng việc không có căng thẳng là một phần của sức khỏe tâm thần tốt. Tuy nhiên, tôi vẫn cần hỏi người dùng về các triệu chứng khác mà họ đang trải qua để đảm bảo rằng họ không có vấn đề sức khỏe nào khác.
+Action: Ask: Bạn có cảm thấy thoải mái và hạnh phúc trong cuộc sống hàng ngày không? Bạn có gặp bất kỳ khó khăn nào trong việc giao tiếp với người khác hoặc thực hiện các hoạt động hàng ngày không?
+PAUSE
+
+Observation:
+tôi không gặp bất kỳ vấn đề nào khác
+
+Model internal thought #7:
+Thought: Người dùng nói rằng họ không gặp bất kỳ vấn đề nào khác. Dựa trên thông tin này, tôi có thể kết luận rằng họ không có vấn đề sức khỏe nào khác.
+Action: Finish: Dựa trên những gì bạn đã mô tả, bạn có vẻ không gặp bất kỳ vấn đề sức khỏe nào khác. Nếu bạn vẫn cảm thấy không thoải mái hoặc có bất kỳ lo lắng nào, hãy tìm kiếm sự giúp đỡ từ chuyên gia y tế.
+PAUSE
+
+Final diagnosis: Dựa trên những gì bạn đã mô tả, bạn có vẻ không gặp bất kỳ vấn đề sức khỏe nào khác. Nếu bạn vẫn cảm thấy không thoải mái hoặc có bất kỳ lo lắng nào, hãy tìm kiếm sự giúp đỡ từ chuyên gia y tế.

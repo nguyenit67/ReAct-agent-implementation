@@ -1,0 +1,23 @@
+Question: Gần đây tôi hay bị mờ mắt, lúc đứng dậy thì hoa mắt, nhức đầu và đôi lúc còn buồn nôn nhẹ.
+
+Model internal thought #1:
+Thought: Người dùng mô tả các triệu chứng mờ mắt, hoa mắt khi đứng dậy, nhức đầu và buồn nôn nhẹ. Các triệu chứng này có thể liên quan đến nhiều vấn đề khác nhau, bao gồm huyết áp thấp, thiếu máu, hoặc các vấn đề về mắt. Tôi cần tìm kiếm thông tin về các nguyên nhân có thể xảy ra.
+Action: Search: mờ mắt, hoa mắt khi đứng dậy, nhức đầu, buồn nôn, huyết áp thấp, thiếu máu, các vấn đề về mắt
+PAUSE
+
+Observation:
+Low blood pressure, low blood oxygen, and anemia can cause blurred vision, dizziness, headaches, and nausea. Immediate medical consultation is advised for persistent symptoms.
+
+Model internal thought #2:
+Thought: Các triệu chứng của người dùng có thể liên quan đến huyết áp thấp, thiếu máu hoặc các vấn đề về mắt. Tuy nhiên, cần lưu ý rằng đây chỉ là những khả năng có thể và cần được xác nhận bởi bác sĩ.
+Action: Ask: Bạn có bị bất kỳ bệnh lý nào khác không? Bạn có đang dùng bất kỳ loại thuốc nào không? Bạn có bị mất máu không?
+PAUSE
+
+Observation:
+Tôi hiện không mắc bất kỳ bệnh lý nào khác, cũng không đang sử dụng loại thuốc nào, và không bị mất máu
+
+Model internal thought #3:
+Thought: Người dùng không mắc bất kỳ bệnh lý nào khác, không dùng thuốc và không bị mất máu. Điều này làm giảm khả năng các nguyên nhân liên quan đến huyết áp thấp, thiếu máu hoặc các vấn đề về mắt. Tuy nhiên, các triệu chứng vẫn cần được đánh giá bởi bác sĩ để loại trừ các nguyên nhân khác.
+Action: Finish: Dựa trên thông tin bạn cung cấp, các triệu chứng của bạn có thể do nhiều nguyên nhân khác nhau gây ra. Để xác định nguyên nhân chính xác và có phương pháp điều trị phù hợp, tôi khuyên bạn nên đi khám bác sĩ để được thăm khám và kiểm tra.
+
+Final diagnosis: Dựa trên thông tin bạn cung cấp, các triệu chứng của bạn có thể do nhiều nguyên nhân khác nhau gây ra. Để xác định nguyên nhân chính xác và có phương pháp điều trị phù hợp, tôi khuyên bạn nên đi khám bác sĩ để được thăm khám và kiểm tra.

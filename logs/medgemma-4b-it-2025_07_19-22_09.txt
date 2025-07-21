@@ -1,0 +1,15 @@
+Question: Hai ngày nay tôi bị sốt cao liên tục, ho không dứt, toàn thân đau mỏi và cảm thấy hoàn toàn không nếm được thức ăn
+
+Model internal thought #1:
+Thought: Người dùng mô tả sốt cao liên tục, ho không dứt, đau mỏi toàn thân và mất vị giác. Đây có thể là dấu hiệu của nhiều bệnh, bao gồm COVID-19, cúm nặng, hoặc các bệnh nhiễm trùng khác. Tôi cần tìm kiếm thông tin về các triệu chứng này.
+Action: Search: sốt cao, ho không dứt, đau mỏi toàn thân, mất vị giác, COVID-19, cúm nặng
+PAUSE
+
+Observation:
+High fever, persistent cough, severe body aches, loss of taste, and smell are common symptoms of COVID-19. Distinguishing from severe flu can be difficult, but loss of taste and smell is more common in COVID-19. Seek medical advice for accurate diagnosis.
+
+Model internal thought #2:
+Thought: Các triệu chứng mô tả bởi người dùng rất phù hợp với COVID-19, đặc biệt là mất vị giác và khứu giác. Tuy nhiên, cần xác nhận chẩn đoán chính xác.
+Action: Ask: Bạn có bị khó thở không? Bạn đã tiêm phòng COVID-19 chưa?
+PAUSE
+

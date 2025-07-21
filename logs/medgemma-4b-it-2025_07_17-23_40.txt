@@ -1,0 +1,33 @@
+Question: Tôi cảm thấy tức ngực, khó thở nhẹ, có lúc ớn lạnh. Hôm nay ăn cơm cũng chẳng nếm được vị gì cả.
+
+Model internal thought #1:
+Thought: Người dùng mô tả các triệu chứng tức ngực, khó thở nhẹ, ớn lạnh và mất vị giác. Đây có thể là dấu hiệu của nhiều vấn đề, bao gồm cả các vấn đề về tim mạch và hô hấp. Tôi cần tìm kiếm thông tin về các triệu chứng này để xác định khả năng có thể.
+Action: Search: tức ngực, khó thở, ớn lạnh, mất vị giác, tim mạch, hô hấp
+PAUSE
+
+Observation:
+Tức ngực, khó thở, ớn lạnh, mất vị giác có thể liên quan đến bệnh tim mạch hoặc COVID-19. Khó thở và đau ngực có thể là dấu hiệu cảnh báo các bệnh nghiêm trọng. Mất vị giác thường do viêm hoặc nhiễm trùng.
+
+Model internal thought #2:
+Thought: Các triệu chứng này có thể liên quan đến nhiều bệnh khác nhau, bao gồm cả các bệnh nghiêm trọng. Tôi cần hỏi thêm về tiền sử bệnh, các triệu chứng khác và mức độ nghiêm trọng của chúng để đưa ra chẩn đoán chính xác hơn.
+Action: Ask: Bạn có tiền sử bệnh tim mạch hoặc hô hấp không? Bạn có các triệu chứng khác như đau ngực, chóng mặt, hoặc thay đổi nhịp tim không? Mức độ khó thở của bạn là như thế nào?
+PAUSE
+
+User trả lời câu hỏi trên: Tôi không có tiền sử bệnh tim mạch hay hô hấp, ngoài triệu chứng tức ngực, khó thở nhẹ, đôi lúc ớn lạnh và mất vị giác, tôi không bị đau ngực hoặc chóng mặt hay thay đổi nhịp tim, mức độ khó thở chỉ nhẹ và vẫn sinh hoạt bình thường
+Observation:
+Tôi không có tiền sử bệnh tim mạch hay hô hấp, ngoài triệu chứng tức ngực, khó thở nhẹ, đôi lúc ớn lạnh và mất vị giác, tôi không bị đau ngực hoặc chóng mặt hay thay đổi nhịp tim, mức độ khó thở chỉ nhẹ và vẫn sinh hoạt bình thường
+
+Model internal thought #3:
+Thought: Người dùng không có tiền sử bệnh tim mạch hoặc hô hấp, và các triệu chứng của họ chủ yếu là tức ngực, khó thở nhẹ, ớn lạnh và mất vị giác. Họ không bị đau ngực, chóng mặt hoặc thay đổi nhịp tim. Mức độ khó thở của họ chỉ nhẹ và họ vẫn sinh hoạt bình thường. Điều này có thể là dấu hiệu của nhiều vấn đề khác nhau, bao gồm cả COVID-19. Tôi nên tìm kiếm thông tin về các bệnh này.
+Action: Search: tức ngực, khó thở nhẹ, ớn lạnh, mất vị giác, COVID-19
+PAUSE
+
+Observation:
+Symptoms like chest tightness, mild shortness of breath, chills, and loss of taste can occur in COVID-19. Seek medical advice if symptoms worsen. Immediate medical attention is needed for severe symptoms like difficulty speaking or confusion.
+
+Model internal thought #4:
+Thought: Các triệu chứng mà người dùng mô tả có thể liên quan đến COVID-19. Tuy nhiên, tôi cần xác nhận điều này và đưa ra lời khuyên phù hợp.
+Action: Finish: Dựa trên các triệu chứng bạn mô tả, có khả năng bạn đang bị COVID-19. Tuy nhiên, tôi khuyên bạn nên kiểm tra với bác sĩ để được chẩn đoán chính xác và có hướng điều trị phù hợp. Nếu các triệu chứng của bạn trở nên nghiêm trọng hơn, hãy đi khám bác sĩ ngay lập tức.
+PAUSE
+
+Final diagnosis: Dựa trên các triệu chứng bạn mô tả, có khả năng bạn đang bị COVID-19. Tuy nhiên, tôi khuyên bạn nên kiểm tra với bác sĩ để được chẩn đoán chính xác và có hướng điều trị phù hợp. Nếu các triệu chứng của bạn trở nên nghiêm trọng hơn, hãy đi khám bác sĩ ngay lập tức.

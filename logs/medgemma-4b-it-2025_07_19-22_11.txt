@@ -1,0 +1,32 @@
+Question: Gần đây tôi rất dễ lo lắng, người mệt mỏi, làm gì cũng kém tập trung và thường xuyên mất ngủ.
+
+Model internal thought #1:
+Thought: Người dùng mô tả các triệu chứng về tâm lý như lo lắng, mệt mỏi, kém tập trung và mất ngủ. Đây có thể là dấu hiệu của các vấn đề về sức khỏe tâm thần. Tôi nên tìm kiếm thông tin về các triệu chứng này.
+Action: Search: lo lắng, mệt mỏi, kém tập trung, mất ngủ, sức khỏe tâm thần
+PAUSE
+
+Observation:
+Stress, fatigue, and lack of focus can lead to insomnia. Effective stress reduction methods include adequate sleep and laughter therapy. Yoga and aromatherapy may also help reduce stress and improve sleep.
+
+Model internal thought #2:
+Thought: Các triệu chứng của người dùng có thể liên quan đến căng thẳng, mệt mỏi và thiếu tập trung, có thể dẫn đến mất ngủ. Tôi nên tìm kiếm thông tin về các phương pháp giảm căng thẳng và cải thiện giấc ngủ.
+Action: Ask: Bạn có đang gặp bất kỳ căng thẳng nào trong cuộc sống hiện tại không? Bạn có đang sử dụng bất kỳ phương pháp nào để giảm căng thẳng không?
+PAUSE
+
+Observation:
+tôi đang hơi căng thẳng vì sắp thi cuối kỳ, hiện tại tôi đang học bài nhiều hơn để giải tỏa căng thẳng
+
+Model internal thought #3:
+Thought: Người dùng đang gặp căng thẳng do thi cuối kỳ và đang cố gắng giải tỏa bằng việc học tập. Điều này có thể ảnh hưởng đến sức khỏe tâm thần của họ. Tôi nên tìm kiếm thông tin về cách quản lý căng thẳng trong thời gian thi cử.
+Action: Search: căng thẳng thi cử, quản lý căng thẳng, sức khỏe tâm thần, thi cử
+PAUSE
+
+Observation:
+Exam stress can lead to mental health issues like anxiety and depression. Effective stress management includes prioritizing tasks and practicing relaxation techniques like yoga. Seeking support from family or professionals is crucial.
+
+Model internal thought #4:
+Thought: Người dùng đang gặp căng thẳng do thi cử, điều này có thể dẫn đến các vấn đề về sức khỏe tâm thần như lo âu và trầm cảm. Tôi nên cung cấp lời khuyên về cách quản lý căng thẳng trong thời gian thi cử.
+Action: Finish: Bạn đang gặp căng thẳng do thi cử, điều này có thể ảnh hưởng đến sức khỏe tâm thần của bạn. Hãy cố gắng ưu tiên các nhiệm vụ quan trọng và dành thời gian cho các kỹ thuật thư giãn như yoga. Đừng ngần ngại tìm kiếm sự hỗ trợ từ gia đình hoặc các chuyên gia tư vấn nếu cần.
+PAUSE
+
+Final diagnosis: Bạn đang gặp căng thẳng do thi cử, điều này có thể ảnh hưởng đến sức khỏe tâm thần của bạn. Hãy cố gắng ưu tiên các nhiệm vụ quan trọng và dành thời gian cho các kỹ thuật thư giãn như yoga. Đừng ngần ngại tìm kiếm sự hỗ trợ từ gia đình hoặc các chuyên gia tư vấn nếu cần.

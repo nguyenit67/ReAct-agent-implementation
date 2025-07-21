@@ -1,0 +1,23 @@
+Question: Tôi nhận thấy mình trở nên buồn bã và ít nói chuyện hơn, chẳng còn hứng thú với những công việc từng rất yêu thích.
+
+Model internal thought #1:
+Thought: Người dùng mô tả cảm xúc buồn bã, ít nói chuyện và mất hứng thú với các hoạt động quen thuộc. Đây có thể là dấu hiệu của trầm cảm hoặc các vấn đề về sức khỏe tâm thần khác. Tôi cần tìm hiểu thêm về mức độ nghiêm trọng và thời gian kéo dài của các triệu chứng này.
+Action: Ask: Bạn đã cảm thấy như vậy trong bao lâu rồi? Bạn có gặp khó khăn trong việc thực hiện các hoạt động hàng ngày không?
+PAUSE
+
+Observation:
+Tôi đã cảm thấy như vậy khoảng hai tuần nay và tôi đôi khi có những suy nghĩ sao nhãng nhưng không gặp khó khăn trong việc thực hiện các hoạt động hàng ngày
+
+Model internal thought #2:
+Thought: Người dùng mô tả các triệu chứng buồn bã, ít nói chuyện và mất hứng thú kéo dài khoảng hai tuần, kèm theo suy nghĩ sao nhãng nhưng không ảnh hưởng đến khả năng thực hiện các hoạt động hàng ngày. Điều này có thể là dấu hiệu của trầm cảm nhẹ hoặc các vấn đề về sức khỏe tâm thần khác. Tôi cần tìm kiếm thông tin về các triệu chứng này và các lựa chọn điều trị.
+Action: Search: buồn bã, ít nói chuyện, mất hứng thú, suy nghĩ sao nhãng, trầm cảm nhẹ, sức khỏe tâm thần
+PAUSE
+
+Observation:
+Trầm cảm là rối loạn tâm thần gây cảm giác buồn bã, mất hứng thú, và suy nghĩ chán ngán. Nếu không điều trị, có nguy cơ tự tử cao. Chẩn đoán và điều trị sớm giúp cải thiện.
+
+Model internal thought #3:
+Thought: Thông tin tìm kiếm xác nhận rằng các triệu chứng của người dùng phù hợp với trầm cảm nhẹ. Việc không điều trị có thể dẫn đến nguy cơ tự tử, điều này rất nghiêm trọng. Tôi cần đưa ra lời khuyên và khuyến khích người dùng tìm kiếm sự giúp đỡ chuyên nghiệp.
+Action: Finish: Dựa trên những gì bạn mô tả, có khả năng bạn đang trải qua một giai đoạn trầm cảm nhẹ. Điều quan trọng là bạn không đơn độc và có nhiều cách để cải thiện tình hình. Tôi khuyên bạn nên tìm kiếm sự giúp đỡ từ bác sĩ tâm thần hoặc chuyên gia tư vấn tâm lý. Họ có thể giúp bạn đánh giá tình trạng và đưa ra phương pháp điều trị phù hợp. Ngoài ra, bạn có thể tìm kiếm sự hỗ trợ từ gia đình, bạn bè hoặc các nhóm hỗ trợ. Đừng ngần ngại chia sẻ cảm xúc của bạn với những người bạn tin tưởng. Nếu bạn đang có suy nghĩ tự tử, hãy gọi ngay cho đường dây nóng hỗ trợ tâm lý hoặc đến cơ sở y tế gần nhất.
+
+Final diagnosis: Dựa trên những gì bạn mô tả, có khả năng bạn đang trải qua một giai đoạn trầm cảm nhẹ. Điều quan trọng là bạn không đơn độc và có nhiều cách để cải thiện tình hình. Tôi khuyên bạn nên tìm kiếm sự giúp đỡ từ bác sĩ tâm thần hoặc chuyên gia tư vấn tâm lý. Họ có thể giúp bạn đánh giá tình trạng và đưa ra phương pháp điều trị phù hợp. Ngoài ra, bạn có thể tìm kiếm sự hỗ trợ từ gia đình, bạn bè hoặc các nhóm hỗ trợ. Đừng ngần ngại chia sẻ cảm xúc của bạn với những người bạn tin tưởng. Nếu bạn đang có suy nghĩ tự tử, hãy gọi ngay cho đường dây nóng hỗ trợ tâm lý hoặc đến cơ sở y tế gần nhất.

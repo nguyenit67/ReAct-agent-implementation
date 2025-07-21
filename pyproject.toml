@@ -1,24 +1,37 @@
-[tool.poetry]
-name = "python-template"
+[project]
+name = "react-agent-implementation"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.28.1",
+    "openai>=1.93.0",
+    "pandas>=2.3.1",
+    "torch>=2.7.0",
+    "python-dotenv>=1.1.1",
+    "scikit-learn>=1.7.0",
+    "underthesea>=6.8.4",
+    "transformers>=4.53.2",
+    "accelerate>=1.9.0",
+    "pillow>=11.3.0",
+    "tavily-python>=0.7.9",
+    "datasets>=4.0.0",
+    "trl>=0.19.1",
+]
 
-[tool.poetry.dependencies]
-python = ">=3.10.0,<3.11"
-httpx = "^0.26.0"
-openai = "^1.8.0"
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu128", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
 
-[tool.pyright]
-# https://github.com/microsoft/pyright/blob/main/docs/configuration.md
-useLibraryCodeForTypes = true
-exclude = [".cache"]
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
 
-[tool.ruff]
-# https://beta.ruff.rs/docs/configuration/
-select = ['E', 'W', 'F', 'I', 'B', 'C4', 'ARG', 'SIM']
-ignore = ['W291', 'W292', 'W293']
-
-[build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "uv>=0.8.0",
+]

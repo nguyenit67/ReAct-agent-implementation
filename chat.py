@@ -1,31 +1,71 @@
-import openai
 import os
+from openai import OpenAI
+from dotenv import load_dotenv
 
-openai.api_key = os.environ['OPENAI_API_KEY']
+from model import Model
+
+
+load_dotenv()
+
+# token = os.getenv("HF_TOKEN")
+# endpoint = "https://router.huggingface.co/featherless-ai/v1"
+model_name = "google/medgemma-4b-it"
+
+
+# client = OpenAI(
+#     base_url=endpoint,
+#     api_key=token,
+# )
+
+
+def format_message(role, content, image=None, multimodal=False):
+    """
+    Format a message for the chat model, including optional image data.
+
+    Args:
+        text (str): The text content of the message.
+        image (str, optional): Base64 encoded image data. Defaults to None.
+
+    Returns:
+        dict: Formatted message dictionary.
+    """
+    if image:
+        content = [{"type": "text", "text": content}, {"type": "image", "image": image}]
+    elif multimodal:
+        content = [{"type": "text", "text": content}]
+
+    return {
+        "role": role,
+        "content": content,
+    }
+
 
 class Chat:
-  '''
-  Wrapper class for OpenAI's Chat API. Designed by Simon
-  '''
-  def __init__(self, system="", model=None):
-    self.system = system
-    self.model = model
-    self.messages = []
-    if self.system:
-      self.messages.append({"role": "system", "content": self.system})
-    if self.model is None:
-      self.model = "gpt-3.5-turbo-1106"
+    """
+    Wrapper class for OpenAI's Chat API. Designed by Simon, extended by NguyenIT67.
+    This class manages the chat session, including system prompts and message history.
+    """
 
-  def __call__(self, message):
-    self.messages.append({"role": "user", "content": message})
-    result = self.execute()
-    self.messages.append({"role": "assistant", "content": result})
-    return result
+    def __init__(self, system="", model=model_name):
+        self.system = system
+        self.model = Model(model_id=model)
+        self.messages = []
+        if self.system:
+            self.messages.append(format_message("system", self.system))
+        if isinstance(self.model, Model):
+            endpoint = "local machine"
+        print(f"Using model {model} on {endpoint}")
 
-  def execute(self):
-    completion = openai.chat.completions.create(
-      model=self.model,
-      messages=self.messages
-    )
-    response = completion.choices[0].message.content
-    return response
+    def __call__(self, message):
+        self.messages.append(format_message("user", message))
+        result = self.execute()
+        self.messages.append(format_message("assistant", result))
+        return result
+
+    def execute(self):
+        response = self.model(messages=self.messages)
+        # response = response.choices[0].message.content
+        return response
+
+    def clear(self):
+        self.messages = [format_message("system", self.system)] if self.system else []

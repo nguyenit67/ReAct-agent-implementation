@@ -1,0 +1,24 @@
+Question: Gần đây tôi rất dễ lo lắng, người mệt mỏi, làm gì cũng kém tập trung và thường xuyên mất ngủ.
+
+Model internal thought #1:
+Thought: Người dùng mô tả các triệu chứng về tâm lý như lo lắng, mệt mỏi, khó tập trung và mất ngủ. Đây có thể là dấu hiệu của căng thẳng, trầm cảm hoặc các vấn đề sức khỏe tâm thần khác. Tôi nên tìm kiếm thông tin về các tình trạng này.
+Action: Search: lo lắng, mệt mỏi, khó tập trung, mất ngủ, căng thẳng, trầm cảm
+PAUSE
+
+Observation:
+Stress, anxiety, fatigue, insomnia, and depression are interconnected; stress often leads to anxiety and depression, while chronic insomnia can worsen these conditions. Regular exercise and mindfulness can help manage stress and improve mental health. Seek professional help if symptoms persist.
+
+Model internal thought #2:
+Thought: Thông tin tìm kiếm xác nhận rằng các triệu chứng của người dùng có thể liên quan đến căng thẳng, lo lắng, mệt mỏi, mất ngủ và trầm cảm. Tôi nên hỏi người dùng thêm về mức độ nghiêm trọng của các triệu chứng này và xem họ có đang sử dụng bất kỳ phương pháp điều trị nào không.
+Action: Ask: Bạn có cảm thấy lo lắng hoặc buồn bã thường xuyên trong một thời gian dài không? Bạn có đang sử dụng bất kỳ loại thuốc nào để điều trị các triệu chứng này không?
+PAUSE
+
+Observation:
+em cảm thấy buồn trong khoảng 2 tuần gần đây, làm gì cũng không có tinh thần
+
+Model internal thought #3:
+Thought: Người dùng báo cáo buồn bã trong khoảng hai tuần, điều này có thể là dấu hiệu của trầm cảm. Tôi nên cung cấp một số lời khuyên và khuyến nghị người dùng tìm kiếm sự giúp đỡ chuyên nghiệp.
+Action: Finish: Bạn đang trải qua một giai đoạn khó khăn. Cảm giác buồn bã kéo dài trong hai tuần có thể là dấu hiệu của trầm cảm. Tôi khuyên bạn nên tìm kiếm sự giúp đỡ từ bác sĩ hoặc chuyên gia tâm lý để được đánh giá và điều trị phù hợp. Ngoài ra, bạn có thể thử các phương pháp tự chăm sóc như tập thể dục, ăn uống lành mạnh và ngủ đủ giấc.
+PAUSE
+
+Final diagnosis: Bạn đang trải qua một giai đoạn khó khăn. Cảm giác buồn bã kéo dài trong hai tuần có thể là dấu hiệu của trầm cảm. Tôi khuyên bạn nên tìm kiếm sự giúp đỡ từ bác sĩ hoặc chuyên gia tâm lý để được đánh giá và điều trị phù hợp. Ngoài ra, bạn có thể thử các phương pháp tự chăm sóc như tập thể dục, ăn uống lành mạnh và ngủ đủ giấc.
