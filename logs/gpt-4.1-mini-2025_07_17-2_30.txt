@@ -1,0 +1,37 @@
+Question: Tôi bị sốt, ho khan và đau đầu 3 ngày nay
+
+Model internal thought #1:
+Thought: Người dùng có các triệu chứng sốt, ho khan và đau đầu kéo dài 3 ngày. Đây có thể là dấu hiệu của các bệnh viêm đường hô hấp như cảm cúm, viêm phổi, COVID-19 hoặc viêm họng. Tôi nên tìm kiếm thông tin về các bệnh lý có các triệu chứng này để đưa ra chuẩn đoán sơ bộ.
+Action: Search: sốt, ho khan, đau đầu, cảm cúm, viêm phổi, COVID-19, viêm họng
+PAUSE
+Observation:
+Bệnh Cảm lạnh thông thường: chảy nước mũi hoặc nghẹt mũi, đau họng, ho, đau nhức cơ thể nhẹ hoặc đau đầu nhẹ, hắt xì, sốt nhẹ, đau họng, nghẹt mũi hoặc chảy nước mũi, hắt hơi, ho, giọng khàn, nói chung không khỏe, nhức đầu nhẹ, đau nhức cơ thể hoặc sốt nhẹ, thấy đau và mệt mỏi dữ dội, ho khan thường xuyên, mệt mỏi trong người, đau nhức cơ thể
+---
+Bệnh Cao huyết áp: xuất huyết kết mạc, chảy máu mũi, chóng mặt và choáng, mờ mắt, hoa mắt, buồn nôn hoặc buồn ói, hay nôn hoặc ói, nhức đầu, hoa mắt, chóng mặt, ù tai, mất ngủ nhẹ, nhìn mờ, chảy máu cam, khó thở, đau ngực chóng mặt, nhức đầu
+---
+Bệnh Bệnh tim mạch: đau tim, nhức tim, đau ngực, tức ngực, ngực khó chịu, khó thở, nhịp tim nhanh hoặc không đều, đau ngực, tức ngực, tức ngực và khó chịu ở ngực ( đau thắt ngực ) khó thở, đau ở cổ, hàm, cổ họng, vùng bụng trên hoặc lưng; đau, tê, yếu hoặc lạnh ở chân hoặc tay nếu mạch máu ở những vùng cơ thể đó thu hẹp, khó thở khó thở gặp gắng sức, nặng hơn gặp cả nghỉ ngơi, hoa mắt chóng mặt, mệt mỏi và buồn ngủ vào ban ngày, khó thở
+
+Model internal thought #2:
+Thought: Các triệu chứng sốt, ho khan và đau đầu của người dùng phù hợp với bệnh cảm lạnh thông thường hoặc các bệnh viêm đường hô hấp khác hơn là bệnh cao huyết áp hoặc bệnh tim mạch, dựa trên thông tin quan sát. Tôi cần hỏi thêm về các triệu chứng đi kèm như mệt mỏi, đau nhức cơ thể, hoặc các triệu chứng về hô hấp để đánh giá chính xác hơn.
+Action: Ask: Ngoài sốt, ho khan và đau đầu, bạn có cảm thấy mệt mỏi, đau nhức cơ thể hay khó thở không? Triệu chứng của bạn có trở nên nghiêm trọng hơn trong những ngày qua không?
+PAUSE
+User trả lời câu hỏi trên: Tôi có mệt mỏi và nhức mỏi mình mẩy, nhưng không thấy khó thở. Các triệu chứng không thay đổi nhiều so với ban đầu, không nặng hơn.
+Observation:
+Tôi có mệt mỏi và nhức mỏi mình mẩy, nhưng không thấy khó thở. Các triệu chứng không thay đổi nhiều so với ban đầu, không nặng hơn.
+
+Model internal thought #3:
+Thought: Người dùng có triệu chứng sốt, ho khan, đau đầu, mệt mỏi và đau nhức cơ thể, nhưng không khó thở và triệu chứng không nặng lên, phù hợp với biểu hiện của cảm lạnh hoặc cảm cúm thông thường. Tôi nên tìm kiếm thông tin chi tiết hơn về cảm cúm và các biện pháp chăm sóc tại nhà.      
+Action: Search: cảm cúm, sốt, ho khan, đau đầu, mệt mỏi, đau nhức cơ thể, điều trị tại nhà
+PAUSE
+Observation:
+Bệnh Cảm lạnh thông thường: chảy nước mũi hoặc nghẹt mũi, đau họng, ho, đau nhức cơ thể nhẹ hoặc đau đầu nhẹ, hắt xì, sốt nhẹ, đau họng, nghẹt mũi hoặc chảy nước mũi, hắt hơi, ho, giọng khàn, nói chung không khỏe, nhức đầu nhẹ, đau nhức cơ thể hoặc sốt nhẹ, thấy đau và mệt mỏi dữ dội, ho khan thường xuyên, mệt mỏi trong người, đau nhức cơ thể
+---
+Bệnh Cao huyết áp: xuất huyết kết mạc, chảy máu mũi, chóng mặt và choáng, mờ mắt, hoa mắt, buồn nôn hoặc buồn ói, hay nôn hoặc ói, nhức đầu, hoa mắt, chóng mặt, ù tai, mất ngủ nhẹ, nhìn mờ, chảy máu cam, khó thở, đau ngực chóng mặt, nhức đầu
+---
+Bệnh Bệnh tim mạch: đau tim, nhức tim, đau ngực, tức ngực, ngực khó chịu, khó thở, nhịp tim nhanh hoặc không đều, đau ngực, tức ngực, tức ngực và khó chịu ở ngực ( đau thắt ngực ) khó thở, đau ở cổ, hàm, cổ họng, vùng bụng trên hoặc lưng; đau, tê, yếu hoặc lạnh ở chân hoặc tay nếu mạch máu ở những vùng cơ thể đó thu hẹp, khó thở khó thở gặp gắng sức, nặng hơn gặp cả nghỉ ngơi, hoa mắt chóng mặt, mệt mỏi và buồn ngủ vào ban ngày, khó thở
+
+Model internal thought #4:
+Thought: Các triệu chứng của người dùng phù hợp nhất với cảm lạnh hoặc cảm cúm thông thường, chưa có dấu hiệu nghiêm trọng như khó thở, đau ngực hoặc các triệu chứng liên quan cao huyết áp, bệnh tim mạch. Tôi nên đưa ra chuẩn đoán sơ bộ và khuyến nghị người dùng chăm sóc tại nhà, theo dõi kỹ các triệu chứng.
+Action: Finish: Dựa trên các triệu chứng bạn mô tả gồm sốt, ho khan, đau đầu, mệt mỏi và đau nhức cơ thể nhưng không có khó thở hay các dấu hiệu nguy hiểm, có khả năng bạn đang bị cảm cúm hoặc cảm lạnh thông thường. Bạn nên nghỉ ngơi đầy đủ, uống nhiều nước, dùng thuốc hạ sốt như paracetamol nếu cần, và theo dõi triệu chứng. Nếu sốt cao trên 39°C, khó thở, đau ngực, hoặc các triệu chứng trở nên nghiêm trọng hơn, bạn nên đi khám bác sĩ ngay.
+
+Final diagnosis: Dựa trên các triệu chứng bạn mô tả gồm sốt, ho khan, đau đầu, mệt mỏi và đau nhức cơ thể nhưng không có khó thở hay các dấu hiệu nguy hiểm, có khả năng bạn đang bị cảm cúm hoặc cảm lạnh thông thường. Bạn nên nghỉ ngơi đầy đủ, uống nhiều nước, dùng thuốc hạ sốt như paracetamol nếu cần, và theo dõi triệu chứng. Nếu sốt cao trên 39°C, khó thở, đau ngực, hoặc các triệu chứng trở nên nghiêm trọng hơn, bạn nên đi khám bác sĩ ngay.

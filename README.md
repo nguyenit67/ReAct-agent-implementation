@@ -69,7 +69,7 @@ This will create the TF-IDF index for medical information retrieval.
 
 ### Main Interactive Assistant
 
-```bash
+```shell
 $ uv run main.py
 Nhập triệu chứng của bạn, 'clear' để reset lịch sử trò chuyện hoặc 'exit' để thoát: ...
 ```
@@ -82,7 +82,7 @@ The assistant will start in Vietnamese and prompt you to:
 
 ### Example Interaction
 
-```
+```shell
 Chào mừng đến với Trợ lý AI Y tế!
 Nhập triệu chứng của bạn, 'clear' để reset lịch sử trò chuyện hoặc 'exit' để thoát: Tôi bị đau đầu, sốt nhẹ và đau họng
 
@@ -97,24 +97,26 @@ Finish[Dựa trên các triệu chứng, có thể bạn đang bị cảm cúm h
 
 ```shell
 ReAct-agent-implementation
-├── data/                     # Medical datasets and indices
-│   ├── dpo_train.json        # Data for DPO training on MedGemma-4B-IT
-│   ├── symptoms.csv          # Data of disease names with symptom list
-│   ├── tfidf_index.npz       # TF-IDF trained index
-│   └── tfidf_vectorizer.pkl  # TF_IDF trained vectorizer
-├── logs/                     # Agent chat logging sessions for each query
-│   ├── gpt-4.1-mini-chat-2025_07_17-2_30.txt    
+├── data/                                           # Medical datasets and indices
+│   ├── dpo_train.json                              # Data for DPO training on MedGemma-4B-IT
+│   ├── symptoms.csv                                # Data of disease names with symptom list
+│   ├── tfidf_index.npz                             # TF-IDF trained index
+│   ├── tfidf_vectorizer.pkl                        # TF_IDF trained vectorizer
+│   └── Disease-Scenario-SymptomDescription.xlsx    # Testing disease scenarios a subset of symptoms each
+├── logs/                                           # Agent chat logging sessions for each query
+│   ├── gpt-4.1-mini-chat-2025_07_17-2_30.txt
 │   ├── medgemma-4b-it-2025_07_21-03_50.txt
-│   └── ...                   
-├── main.py                   # Entry point for the application
-├── chat.py                   # Chat interface and model interaction
-├── agent.py                  # Main ReAct agent implementation
-├── model.py                  # Model loading and inference utilities
-├── tools.py                  # Medical search tools and functions
-├── logger.py                 # System & agent logging configuration
-├── prepare_index.py          # TF-IDF index preparation
-├── pyproject.toml            # Project dependencies and configuration
-└── medgemma-4b-dpo.ipynb     # Notebook to run Direct Preference Optimization on MedGemma-4B-IT
+│   └── ...
+├── main.py                                         # Entry point for the application
+├── chat.py                                         # Chat interface and model interaction
+├── agent.py                                        # Main ReAct agent implementation
+├── model.py                                        # Model loading and inference utilities
+├── tools.py                                        # Medical search tools and functions
+├── logger.py                                       # System & agent logging configuration
+├── metrics.xlsx                                    # Scoring metrics for different model version (Original vs DPO)
+├── prepare_index.py                                # TF-IDF index preparation
+├── pyproject.toml                                  # Project dependencies and configuration
+└── medgemma-4b-dpo.ipynb                           # Notebook to run Direct Preference Optimization on MedGemma-4B-IT
 ```
 
 ## 🛠️ Key Components

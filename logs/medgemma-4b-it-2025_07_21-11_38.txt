@@ -1,9 +1,0 @@
-Question: Mấy hôm nay mũi tôi liên tục nghẹt, kèm theo ho nhẹ và cơ thể thì hơi mệt, đau ê ẩm
-
-Model internal thought #1:
-Thought: Người dùng mô tả các triệu chứng nghẹt mũi, ho nhẹ và mệt mỏi, đau ê ẩm. Đây có thể là dấu hiệu của cảm lạnh, cảm cúm hoặc COVID-19. Tôi nên tìm kiếm thông tin về các bệnh này.
-Action: Search: nghẹt mũi, ho nhẹ, mệt mỏi, đau ê ẩm, cảm lạnh, cảm cúm, COVID-19
-PAUSE
-
-Observation:
-Nghẹt mũi, ho nhẹ, mệt mỏi, cảm lạnh, cảm cúm, và COVID-19 có triệu chứng tương đồng. Mất khứu giác đặc trưng cho COVID-19. Nhiễm trùng kéo dài có thể yêu cầu khám bác sĩ.
